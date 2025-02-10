@@ -1,0 +1,285 @@
+/* Variables */
+:root{
+    --gris-color: #333;
+    --white-color:white;
+    /* espaciado */
+    --space: 10px;
+    /* tipografia */
+    --font-size: 16px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+}
+
+nav{
+    background-color: #8d8649;
+    color: var(--white-color);
+    padding: var(--space);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-right: 50px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: rgb(235, 174, 83);
+}
+
+
+.brand_image img {
+    width: 60px; 
+    height: auto; 
+    display: block; 
+}
+
+label{
+    font-size: var(--font-size);
+    color: beige;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-minimalista-dibujado-mano_23-2149001650.jpg?semt=ais_hybrid');
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que la sección ocupe el 100% de la altura de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro de la sección */
+    align-items: center; /* Centra el contenido verticalmente */
+    color: rgb(99, 96, 96); /* Cambia el color del texto si es necesario */
+    text-align: center; /* Centra el texto */
+    padding: 0; /* Elimina padding adicional */
+    margin-bottom: 0; /* Elimina margen inferior */
+}
+
+.hero_content {
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+
+}
+
+.main_section h1{
+    font-size: 3rem;
+    color: var(--gris-color);
+    margin-top: -110px;
+}
+
+.products { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra las tarjetas en la pantalla */
+    align-items: flex-start; /* Alinea las tarjetas desde el principio */
+    position: relative; /* Para que los elementos dentro no se vean afectados por el fondo */
+}
+
+.products {
+    background-size: cover; /* La imagen cubre toda la sección */
+    background-position: center center; /* Centrado de la imagen */
+    background-repeat: no-repeat; /* La imagen no se repite */
+    height:75vh; /* Ocupa toda la altura de la pantalla */
+    padding: 0; /* Elimina el padding */
+    margin: -100; /* Elimina el margen */
+}
+
+.product{
+    background-color: var(--white-color);
+    /* padding: 20px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1 1 300px; 
+    /* margin-top: 20px; */
+}
+.product .content{
+    padding: 20px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img_content img {
+    width: 100%; /* Hace que la imagen se ajuste al ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción original */
+    max-height: 200px; /* Ajustá esto según el tamaño deseado */
+    object-fit: contain; /* Asegura que la imagen no se corte */
+    display: block; /* Evita espacios extra */
+    margin: 0 auto;
+    text-align: center;    
+    border-bottom: 1px solid #ddd;
+}
+
+
+.main_botton{
+    background-color: #639263;
+    width: 50%;
+    padding: 10%;
+    font-size: 15px;
+    color: rgb(253, 253, 253);
+    border: none;
+    border-radius: 8px;
+
+
+}
+
+.main_botton:hover{
+    background-color: var(--gris-color);
+    color: var(--white-color);
+}
+
+.testimonios {
+    background-color: #8d8649; /* Un fondo claro diferente al de productos */
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.testimonios h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los testimonios */
+    gap: 20px; /* Espaciado entre testimonios */
+}
+
+.testimonio {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.testimonio h1 {
+    font-size: 1.5rem;
+    color: #639263;
+}
+
+.testimonio p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonio img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* venta */
+
+.modulo_pago{
+    background-color: #8d8649;
+    box-shadow: 0 2px 1px #e6e5e9;
+    padding: 10px;
+    margin-top: 60px;
+
+}
+
+.modulo_pago h3{
+    font-size: 25px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.modulo_pago p{
+    font-size: 15px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modulo_pago img{
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.botton_input{
+    background-color: beige;
+    color: var(--gris-color);    
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: 0;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.footer {
+    background-color: #6a6539; /* Mismo color que el navbar */
+    color: whitesmoke; /* Color de texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el contenido */
+}
+
+.footer_content {
+    max-width: 1200px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Padding lateral */
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
