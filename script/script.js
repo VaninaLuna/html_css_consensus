@@ -13,8 +13,8 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     // URLs posibles
     let urls = [
-        "file:///C:/Users/vanil/OneDrive/Documentos/Consensus/Html%20-%20css/exito.html",
-        "file:///C:/Users/vanil/OneDrive/Documentos/Consensus/Html%20-%20css/error.html"
+        "exito.html",
+        "error.html"
     ];
 
     // elegir url al azar
